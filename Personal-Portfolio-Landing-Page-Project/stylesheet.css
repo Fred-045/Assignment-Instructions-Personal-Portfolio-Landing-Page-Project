@@ -1,0 +1,51 @@
+body{background-color:gainsboro;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+  'nd nd nd nd nd nd nd nd '
+  'im im im im vd vd vd vd'  
+  'tg tg tg tg tg tg tg tg'
+  'sd sd sd sd rx rx rx rx'
+  'fd fd fd fd fd fd fd fd'
+  
+    ;
+    
+}
+
+#navbarDiv{
+grid-area: nd;
+font-size: xx-large ;
+max-width: 100%;
+}
+#vidDiv{
+grid-area: vd;
+}
+#imageDiv{
+grid-area: im;
+}
+#taglineDiv{
+grid-area: tg;
+}
+#skillsDiv{
+grid-area: sd;
+}
+#hobyDiv{
+  grid-area: rx;
+}
+#footerDiv{
+    grid-area: fd;
+}
+@media screen and (max-width:600px){
+  body{
+    background-color: lightgreen;
+  }
+}
+.navbarDiv{
+  max-width: 100%;
+}
+.img{
+  
+  padding-right:500px;
+}
